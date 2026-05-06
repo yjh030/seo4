@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (product) {
             renderProductDetail(product, detailContainer);
         } else {
-            detailContainer.innerHTML = '<h2>Product not found</h2>';
+            detailContainer.innerHTML = '<h2>找不到該產品</h2>';
         }
     }
 });
@@ -58,7 +58,7 @@ function renderProductDetail(product, container) {
                 <h1>${product.name}</h1>
                 <div class="detail-price">$${product.price}</div>
                 <p class="detail-desc">${product.description}</p>
-                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-primary">加入購物車</button>
             </div>
         </div>
     `;
